@@ -1,0 +1,31 @@
+<form>
+    <input type="file" name="foto_perfil">
+    <input type="file" name="fotos[]" multiple>
+    <input type="file" name="documento" accept=".html">
+    <button type="submit">Enviar</button>
+</form>
+
+<form>
+    <input type="checkbox" name="carro" value="Fiat"> Fiat<br>
+    <input type="checkbox" name="carro" value="Audi"> Audi<br>
+    <button type="submit">Enviar</button>
+</form>
+<form>
+    <input type="password" name="senha" placeholder="Digite sua senha">
+    <input type="password" name="senha" minlength="8" maxlength="12" required>
+    <input type="password" name="senha" inputmode="numeric">
+    <input type="password" name="senha" pattern="[0-9A-Fa-f]{4,8}" title="A senha deve conter de 4 a 8 caracteres hexadecimais (0-9, A-F)">
+    <input type="submit" value="Enviar">
+</form>
+<form>
+    <input type="email" name="email">
+    <input type="email" name="emails" multiple>
+    <input type="email" name="email" minlength="18" maxlength="255">
+    <input type="email" name="email" pattern=".+@fema\.com" required title="Apenas e-mail da Fema são aceitos.">
+    <input type="submit" value="enviar">
+</form>
+<select name="car">
+    <option value="">Selecione</option>
+    <option value="fiat">Fiat</option>
+    <option value="bmw">BMW</option>
+</select>

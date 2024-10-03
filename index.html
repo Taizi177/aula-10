@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <label>Inscreva-se para o Evento</label>
+    <fieldset>
+
+        <legend>Informações Pessoais</legend>
+        <div class="form-group">
+            <label for="name">Nome Completo</label> </br>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail</label> </br>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Telefone</label> </br>
+            <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Escolha suas preferências</legend>
+        <legend>Tipo de evento</legend>
+        <div class="form-group-dois">
+            <select name="tipo-evento">
+                <option value="">Selecione</option>
+                <option value="cafe">Café da manhã</option>
+                <option value="almoco">Almoço</option>
+                <option value="janta">Janta</option>
+            </select> 
+        </div>
+        <form>
+            <label for="preferencias">Preferências Alimentares</label> </br>
+            <input type="checkbox" name="preferencia-alimentar" value="vegetariano"> Vegetariano<br>
+            <input type="checkbox" name="preferencia-alimentar" value="vegano"> Vegano<br>
+            <input type="checkbox" name="preferencia-alimentar" value="sem-gluten"> Sem Glúten<br>
+            <input type="checkbox" name="preferencia-alimentar" value="carnivoro"> Carnívoro<br>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Comentários e Preferências Adicionais</legend>
+        <div class="form-group-tres">
+            <label for="name">Comentários</label> </br>
+            <input type="text" id="comentario" name="comentario" placeholder="Deixe seus comentários ou prefrências aqui" required>
+        </div>
+    </fieldset>
+
+    <button type="submit">Enviar Inscrição</button>
+</body>
+</html>
